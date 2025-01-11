@@ -1,5 +1,10 @@
-// src/components/Testimonials.jsx
+
 import React from 'react';
+import Testimonial1 from "../assets/Testimonial/testimonial-1.jpg"
+import Testimonial2 from "../assets/Testimonial/testimonial-2.jpg"
+import Testimonial3 from "../assets/Testimonial/testimonial-3.jpg"
+import Testimonial4 from "../assets/Testimonial/testimonial-4.jpg"
+
 
 const Testimonials = () => {
   return (
@@ -18,7 +23,7 @@ const Testimonials = () => {
           <div className="text-center pb-4">
             <img
               className="mx-auto w-24 h-24 object-cover rounded-full"
-              src="/src/assets/Testimonial/testimonial-1.jpg"
+              src={Testimonial1}
               alt="Client 1"
             />
             <div className="bg-white p-4 mt-[-2rem] shadow-md">
@@ -34,7 +39,7 @@ const Testimonials = () => {
           <div className="text-center pb-4">
             <img
               className="mx-auto w-24 h-24 object-cover rounded-full"
-              src="/src/assets/Testimonial/testimonial-2.jpg"
+              src={Testimonial2}
               alt="Client 2"
             />
             <div className="bg-white p-4 mt-[-2rem] shadow-md">
@@ -50,7 +55,7 @@ const Testimonials = () => {
           <div className="text-center pb-4">
             <img
               className="mx-auto w-24 h-24 object-cover rounded-full"
-              src="/src/assets/Testimonial/testimonial-3.jpg"
+              src={Testimonial3}
               alt="Client 3"
             />
             <div className="bg-white p-4 mt-[-2rem] shadow-md">
@@ -66,7 +71,7 @@ const Testimonials = () => {
           <div className="text-center pb-4">
             <img
               className="mx-auto w-24 h-24 object-cover rounded-full"
-              src="/src/assets/Testimonial/testimonial-4.jpg"
+              src={Testimonial4}
               alt="Client 4"
             />
             <div className="bg-white p-4 mt-[-2rem] shadow-md">

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Carousel from '../assets/carousel-1.jpg'
 
 const Registration = () => {
   const [name, setName] = useState("");
@@ -25,7 +26,7 @@ const Registration = () => {
     <div className="relative py-5">
       {/* Background image as an img tag */}
       <img
-        src="src/assets/carousel-1.jpg"
+        src={Carousel}
         alt="background"
         className="absolute inset-0 w-full h-full object-cover"
       />

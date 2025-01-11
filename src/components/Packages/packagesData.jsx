@@ -1,8 +1,14 @@
+import Package1 from '../../assets/packages/package-1.jpg'
+import Package2 from '../../assets/packages/package-2.jpg'
+import Package3 from '../../assets/packages/package-3.jpg'
+import Package4 from '../../assets/packages/package-4.jpg'
+import Package5 from '../../assets/packages/package-5.jpg'
+import Package6 from '../../assets/packages/package-6.jpg'
 
 
 const packagesData = [
     {
-      image: "src/assets/packages/package-1.jpg",
+      image: Package1,
       location: "Thailand",
       duration: "3 days",
       persons: "2 Person",
@@ -11,7 +17,7 @@ const packagesData = [
       price: "350",
     },
     {
-      image: "src/assets/packages/package-2.jpg",
+      image: Package2,
       location: "Thailand",
       duration: "3 days",
       persons: "2 Person",
@@ -20,7 +26,7 @@ const packagesData = [
       price: "350",
     },
     {
-      image: "src/assets/packages/package-3.jpg",
+      image: Package3,
       location: "Thailand",
       duration: "3 days",
       persons: "2 Person",
@@ -29,7 +35,7 @@ const packagesData = [
       price: "350",
     },
     {
-      image: "src/assets/packages/package-4.jpg",
+      image: Package4,
       location: "Thailand",
       duration: "3 days",
       persons: "2 Person",
@@ -38,7 +44,7 @@ const packagesData = [
       price: "350",
     },
     {
-      image: "src/assets/packages/package-5.jpg",
+      image: Package5,
       location: "Thailand",
       duration: "3 days",
       persons: "2 Person",
@@ -47,7 +53,7 @@ const packagesData = [
       price: "350",
     },
     {
-      image: "src/assets/packages/package-6.jpg",
+      image: Package6 ,
       location: "Thailand",
       duration: "3 days",
       persons: "2 Person",
