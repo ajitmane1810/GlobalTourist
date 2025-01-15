@@ -2,12 +2,9 @@ import React from 'react';
 import main from '../../assets/carousel-2.jpg';
 import Search from '../../components/Search';
 import AboutSection from '../../components/AboutSection';
-import Destination from '../../components/Destination/Destination.jsx';
 import ServicesSection from '../../components/ServicesSection.jsx';
 import PackagesSection from '../../components/Packages/PackagesSection.jsx';
 import Registration from '../../components/Registration.jsx';
-import TravelGuides from '../../components/TravelGuides .jsx';
-import Testimonials from '../../components/Testimonials .jsx';
 import HomeHeroSection from '../Home/HomeHeroSection.jsx'; 
 
 const Home = () => {
@@ -24,12 +21,9 @@ const Home = () => {
       {/* Rest of the page content */}
       <Search />
       <AboutSection />
-      <Destination />
       <ServicesSection />
-      <PackagesSection />
       <Registration />
-      <TravelGuides />
-      <Testimonials />
+      <PackagesSection />
     </div>
   );
 };

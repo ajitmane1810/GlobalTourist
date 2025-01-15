@@ -6,6 +6,8 @@ import MobileMenu from '../Navbar/MobileMenu.jsx';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isPagesOpen, setIsPagesOpen] = useState(false);  // Manage the dropdown visibility
+  const [activeDropdown, setActiveDropdown] = useState(null);
   const navRef = useRef(null);
 
   const navLinks = [
@@ -13,7 +15,16 @@ const Navbar = () => {
     { name: 'About', href: '/about' },
     { name: 'Services', href: '/services' },
     { name: 'Tour Packages', href: '/tour-packages' },
-    { name: 'Pages', href: '#' },
+    { 
+      name: 'Pages', 
+      href: '#', 
+      dropdown: true, 
+      dropdownLinks: [
+        { name: 'Destination', href: '/destination' },
+        { name: 'Travel Guides', href: '/guides' },
+        { name: 'Testimonial', href: '/testimonial' }
+      ]
+    },
     { name: 'Contact', href: '/contact' },
   ];
 
@@ -22,13 +33,12 @@ const Navbar = () => {
     const handleClickOutside = (event) => {
       if (navRef.current && !navRef.current.contains(event.target)) {
         setIsOpen(false);
+        setIsPagesOpen(false);  // Close the dropdown when clicking outside
       }
     };
 
-    // Attach event listener to document
     document.addEventListener('mousedown', handleClickOutside);
 
-    // Cleanup event listener on component unmount
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
     };
@@ -36,21 +46,22 @@ const Navbar = () => {
 
   return (
     <div>
-      <nav className="bg-white  drop-shadow-2xl lg:mx-44 lg:relative top-9 z-10" ref={navRef}>
+      <nav className="bg-white drop-shadow-2xl lg:mx-44 lg:relative top-9 z-10" ref={navRef}>
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center h-20">
             {/* Logo */}
             <div className="flex-shrink-0">
-              <a href="#" className="flex items-center">
+              <a href="/" className="flex items-center">
                 <h1 className="text-3xl font-bold">
-                  <span className="text-gray-800">TRAVEL</span>
-                  <span className="text-primary">ER</span>
+                  <span className="text-gray-800">Global</span>
+                  <span className="text-primary">Tourist</span>
                 </h1>
               </a>
             </div>
 
             {/* Desktop Menu */}
-            <NavLinks navLinks={navLinks} />
+            <NavLinks navLinks={navLinks} isPagesOpen={isPagesOpen} setIsPagesOpen={setIsPagesOpen}  activeDropdown={activeDropdown}  
+        setActiveDropdown={setActiveDropdown} />
 
             {/* Mobile Menu Button */}
             <div className="lg:hidden">
@@ -70,7 +81,7 @@ const Navbar = () => {
           </div>
 
           {/* Mobile Menu */}
-          <MobileMenu navLinks={navLinks} isOpen={isOpen} setIsOpen={setIsOpen} />
+          <MobileMenu navLinks={navLinks} isOpen={isOpen} setIsOpen={setIsOpen} setIsPagesOpen={setIsPagesOpen} />
         </div>
       </nav>
     </div>

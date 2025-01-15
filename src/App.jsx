@@ -9,6 +9,9 @@ import Packages from './Pages/Packages/Packages.jsx';
 import Contact from './Pages/Contact/Contact.jsx';
 import TopBar from './components/TopBar.jsx'
 import BackToTopButton from './components/BackToTopButton .jsx';
+import Destinations from './Pages/Destinations/Destinations.jsx';
+import TravelGuide from './Pages/Travel_Guides/TravelGuide.jsx';
+import Testimonial from './Pages/Testimonial/Testimonial.jsx';
 
 const App = () => {
   return (
@@ -24,9 +27,14 @@ const App = () => {
             <Route path="/services" element={<Services />} />
             <Route path="/tour-packages" element={<Packages />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/destination" element={<Destinations />} />
+            <Route path="/guides" element={<TravelGuide />} />
+            <Route path="/testimonial" element={<Testimonial/>} />
+            
+
           </Routes>
         </main>
-      {/* <Footer /> */}
+      <Footer />
       </div>
       <BackToTopButton /> 
     </Router>

@@ -7,11 +7,11 @@ const TopBar = () => {
         <div className="flex justify-between items-center">
           <div className="flex items-center space-x-4">
             <span className="text-gray-600">
-              <i className="far fa-envelope mr-2"></i>ajit@gmail.com
+              <i className="far fa-envelope mr-2"></i>ajitmane1810@gmail.com
             </span>
             <span className="text-gray-400">|</span>
             <span className="text-gray-600">
-              <i className="fas fa-phone-alt mr-2"></i>+91 7420928727
+              <i className="fas fa-phone-alt mr-2"></i>+91 742 092 8727
             </span>
           </div>
           <div className="flex items-center space-x-4">
@@ -21,7 +21,7 @@ const TopBar = () => {
             <a href="#" className="text-primary hover:text-primary/80">
               <i className="fab fa-twitter"></i>
             </a>
-            <a href="#" className="text-primary hover:text-primary/80">
+            <a href="https://www.linkedin.com/in/ajitmane/" className="text-primary hover:text-primary/80">
               <i className="fab fa-linkedin-in"></i>
             </a>
             <a href="#" className="text-primary hover:text-primary/80">

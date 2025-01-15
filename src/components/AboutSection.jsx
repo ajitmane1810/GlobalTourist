@@ -3,7 +3,7 @@ import AboutImg from '../assets/about.jpg'
 
 const AboutSection = () => {
   return (
-    <div className=" py-16 md:py-24 px-10 md:px-44 bg-gray-50">
+    <div className="py-16 md:py-24 px-6 md:px-10 lg:px-20 bg-gray-50">
       <div className="max-w-7xl mx-auto">
         {/* Large Background Image */}
         <div className="relative flex flex-col md:flex-row items-center">
@@ -11,14 +11,14 @@ const AboutSection = () => {
           <img
             src={AboutImg}
             alt="Traveler with backpack"
-            className="w-full md:w-[600px] md:h-[800px] object-cover mb-6 md:mb-0"
+            className="w-full h-auto md:w-[600px] md:h-[600px] lg:h-[800px] object-cover mb-6 md:mb-0"
           />
           
           {/* White Card */}
-          <div className=" bg-white p-8 shadow-lg w-full md:w-[680px] lg:absolute lg:right-1">
+          <div className="bg-white p-8 shadow-lg w-full md:flex flex-col md:w-[700px] lg:absolute lg:right-5 mt-6 md:mt-0">
             <div className="mb-8">
               <h2 className="text-primary uppercase text-sm mb-2" style={{ letterSpacing: "5px" }}>ABOUT US</h2>
-              <h1 className="text-4xl font-bold text-gray-900 mb-4">We Provide Best Tour Packages In Your Budget</h1>
+              <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">We Provide Best Tour Packages In Your Budget</h1>
               <p className="text-gray-600 text-base">
                 Dolores lorem ipsum sit et ipsum. Sadip sea amet diam dolore sed et. Sit rebum labore sit sit ut vero no sit. Et elitr stet dolor sed sit et sed ipsum et kasd ut. Erat duo eos et erat sed diam duo.
               </p>
